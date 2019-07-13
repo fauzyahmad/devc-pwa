@@ -1,0 +1,53 @@
+<html lang="en">  
+<head>
+  <meta charset="utf-8">
+  <title>OFFLINE| My First Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./asset/css/styling.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <header>
+    <h1>DevC's Blog Page</h1>    
+  </header>
+<div id="main">
+  <nav>    
+    <h3>Navigation on Page</h3>          
+    <strong class="padding-nav">Home<br>
+    <a class="padding-nav" href="/about.html">About</a><br>
+    <a class="padding-nav" href="/video.html">Video</a>
+    </strong>
+  </nav>
+  <article>
+    <section>
+      <h2>
+        Hello, Kamu offline sekarang
+      </h2>
+      <p>Perbaiki jaringanmu, kembali lagi nanti. 
+          Kamu bisa kembali ke halaman <a href="/">HOME</a>
+      </p>
+    </section>
+  </article>
+  <aside>
+    <h2>Home Page</h2>    
+    <p>All About Introduction page.</p>
+    <h2>About Page</h2>
+    <p>Stands for my personal Life.</p>
+    <h2>Video</h2>
+    <p>Random video from Youtube</p>
+  </aside>
+</div>
+<footer>DevC Facebook Blog - 2019</footer>  
+</body>
+<script>
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+    .then(registration => {
+      console.log('Service Worker Berhasil ter-Register', registration)
+    }).catch(err => {
+      console.log(err)
+    })
+  }    
+</script>
+</html>
+ 

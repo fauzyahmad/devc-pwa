@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box; 
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+#main {
+  display: flex;
+  flex: 1;
+}
+#main > article {
+  flex: 1;
+}
+#main > nav, 
+#main > aside {
+  flex: 0 0 20vw;
+  background: beige;
+}
+#main > nav {
+  order: -1;
+}
+.padding-nav {
+  line-height: 2;
+}
+header, footer {
+  background: #4267b2;
+  height: auto;
+}
+header, footer, article, nav, aside {
+  padding: 1em;
+}
+
+@media only screen and (max-width: 575px) {
+  body, #main {
+    display: block!important;
+  }
+  nav, aside, article {
+    width: 100%!important;
+  }
+}
