@@ -7,11 +7,11 @@ yarn-error.log*
 firebase-debug.log*
 
 # sw dan workbox
-workbox-config.js
-web-iom/service-worker.js
-web-iom/sw.js
-web-iom/sw-base.js
-web-iom/manifest.json
+# workbox-config.js
+# web-iom/service-worker.js
+# web-iom/sw.js
+# web-iom/sw-base.js
+# web-iom/manifest.json
 
 # Firebase cache
 .firebase/
